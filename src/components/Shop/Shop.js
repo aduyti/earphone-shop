@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { addProductToCart } from '../../Utility/accessData.js'
+import Product from '../Product/Product';
 
 const Shop = () => {
     const [products, setProducts] = useState([]);
@@ -7,10 +9,13 @@ const Shop = () => {
             .then(response => response.json())
             .then(data => setProducts(data));
     }, []);
+    const clickHandler = id => {
+        addProductToCart(id);
+    }
     return (
         <div>
             {
-                products.map(product => <img src={product.image} />)
+                products.map(product => <Product product={product} key={product.id} clickHandler={clickHandler} />)
             }
         </div>
     );
