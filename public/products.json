@@ -1,8 +1,68 @@
 [
     {
-        "id": "n013131313",
-        "name": "Redmi Buds 3",
-        "price": 49.99,
-        "image": "link.link"
+        "id": "p1-001",
+        "name": "1MORE Omthing AirFree TWS",
+        "price": 26.50,
+        "image": "https://xiaomi-mi.com/uploads/CatalogueImage/pv_04_20070_1639602186.jpg"
+    },
+    {
+        "id": "p1-002",
+        "name": "1MORE EHD9001TA",
+        "price": 69.96,
+        "image": "https://xiaomi-mi.com/uploads/CatalogueImage/pv_01_20053_1639601685.jpg"
+    },
+    {
+        "id": "p1-003",
+        "name": "1MORE Omthing Lace Neckband",
+        "price": 15.99,
+        "image": "https://xiaomi-mi.com/uploads/CatalogueImage/pv_02_20049_1639604104.jpg"
+    },
+    {
+        "id": "p1-004",
+        "name": "1MORE EHD9001BA",
+        "price": 106.83,
+        "image": "https://xiaomi-mi.com/uploads/CatalogueImage/pv_01_20047_1639601360.jpg"
+    },
+    {
+        "id": "p1-005",
+        "name": "1MORE ComfoBuds Z",
+        "price": 99.99,
+        "image": "https://xiaomi-mi.com/uploads/CatalogueImage/pv_04_20046_1639600477.jpg"
+    },
+    {
+        "id": "p1-006",
+        "name": "1MORE ComfoBuds 2",
+        "price": 59.00,
+        "image": "https://xiaomi-mi.com/uploads/CatalogueImage/pv_02_20042_1639548937.jpg"
+    },
+    {
+        "id": "p1-007",
+        "name": "1MORE ComfoBuds 2 mini",
+        "price": 99.00,
+        "image": "https://xiaomi-mi.com/uploads/CatalogueImage/pv_03_20039_1639550073.jpg"
+    },
+    {
+        "id": "p1-008",
+        "name": "Amazfit PowerBuds Pro",
+        "price": 149.99,
+        "image": "https://xiaomi-mi.com/uploads/CatalogueImage/pv_02_19992_1639513730.jpg"
+    },
+    {
+        "id": "p1-009",
+        "name": "Black Shark Earphone",
+        "price": 34.99,
+        "image": "https://xiaomi-mi.com/uploads/CatalogueImage/pv_Xiaomi-Black-Shark-3-5mm-Gaming-Headphones-Black-001_19777_1638112450.jpg"
+    },
+    {
+        "id": "p1-010",
+        "name": "Redmi Buds 3 Pro",
+        "price": 59.99,
+        "image": "https://xiaomi-mi.com/uploads/CatalogueImage/pv_05_19640_1636315067.jpg"
+    },
+    {
+        "id": "p1-011",
+        "name": "Redmi AirDots 3",
+        "price": 36.00,
+        "image": "https://xiaomi-mi.com/uploads/CatalogueImage/pv_redmiairdots3%20(2)_19179_1614894605.jpg"
     }
 ]
