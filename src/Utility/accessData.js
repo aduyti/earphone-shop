@@ -13,13 +13,26 @@ const addProductToCart = product => {
     }
     return false;
 }
-const getCart = () => {
+const getStoredCart = () => {
     return JSON.parse(localStorage.getItem('earphoneCart'));
 }
 const removeProductFromCart = id => {
-    console.log(id);
+    let cart = JSON.parse(localStorage.getItem('earphoneCart')) || [];
+    cart = cart.filter(item => item.id !== id);
+    localStorage.setItem('earphoneCart', JSON.stringify(cart));
 }
 const removeAllProductsFromCart = () => {
-    console.log("all");
+    localStorage.removeItem('earphoneCart');
 }
-export { addProductToCart, removeProductFromCart, removeAllProductsFromCart, getCart };
+const keepOne = id => {
+    let cart = JSON.parse(localStorage.getItem('earphoneCart')) || [];
+    cart = cart.filter(item => item.id === id);
+    localStorage.setItem('earphoneCart', JSON.stringify(cart));
+}
+export {
+    addProductToCart,
+    removeProductFromCart,
+    removeAllProductsFromCart,
+    getStoredCart,
+    keepOne
+};
