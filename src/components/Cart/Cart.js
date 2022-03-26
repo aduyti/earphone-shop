@@ -6,7 +6,8 @@ const Cart = ({ items, clickHandler }) => {
     const { removeClickHandler, chooseOne, emptyCart } = clickHandler;
     return (
         <div className="cart-container">
-            <div>Cart Summary</div>
+            <div>Cart Summary<br /><small>(you can buy 4 earphone)</small></div>
+            <div style={{ fontSize: '16px', color: 'gray' }}>Earphone Selected: {items.length}</div>
             <div>
                 {
                     items.map((item) => <CartItem key={item.id}

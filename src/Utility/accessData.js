@@ -1,7 +1,7 @@
 const addProductToCart = product => {
     let cart = JSON.parse(localStorage.getItem('earphoneCart')) || [];
     if (cart.length === 4) {
-        window.alert("Maximum 4 Earphone is Already Added");
+        window.alert("Maximum 4 Earphone is Already Added!");
     }
     else if (cart.find(item => item.id === product.id)) {
         window.alert("This Earphone Already Added!");
