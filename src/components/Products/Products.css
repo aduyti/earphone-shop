@@ -1,0 +1,19 @@
+.products {
+    margin: 50px 10px;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 25px;
+}
+
+@media (min-width: 768px) {
+    .products {
+        margin: 50px;
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (min-width: 992px) {
+    .products {
+        grid-template-columns: repeat(3, auto);
+    }
+}

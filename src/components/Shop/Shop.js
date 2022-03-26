@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { addProductToCart, removeProductFromCart } from '../../Utility/accessData.js'
 import Cart from '../Cart/Cart.js';
-import Product from '../Product/Product';
+import Products from '../Products/Products.js';
 import './Shop.css'
 
 const Shop = () => {
@@ -23,11 +23,7 @@ const Shop = () => {
     }
     return (
         <div className="shop">
-            <div className="products">
-                {
-                    products.map(product => <Product product={product} key={product.id} clickHandler={addClickHandler} />)
-                }
-            </div>
+            <Products products={products} clickHandler={addClickHandler} />
             <Cart items={cartItems} clickHandler={removeClickHandler} />
         </div>
     );

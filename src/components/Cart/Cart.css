@@ -8,3 +8,18 @@
     font-size: 24px;
     font-weight: bold;
 }
+
+.choose-btn {
+    border: 1px solid aqua;
+    border-radius: 10px;
+    width: 60%;
+    height: 35px;
+    color: white;
+    font-size: 22px;
+    background-color: dimgray;
+}
+
+.choose-btn:hover {
+    background-color: aquamarine;
+    color: maroon;
+}
