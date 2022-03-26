@@ -12,14 +12,14 @@ const Shop = () => {
             .then(data => setProducts(data));
     }, []);
     const clickHandler = id => {
-        addProductToCart(id);
+        const product = products.find(product => product.id === id);
+        addProductToCart(product);
     }
     return (
         <div className="shop">
             <div className="products">
                 {
                     products.map(product => <Product product={product} key={product.id} clickHandler={clickHandler} />)
-
                 }
             </div>
             <Cart />
