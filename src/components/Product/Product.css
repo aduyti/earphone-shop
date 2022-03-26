@@ -2,8 +2,8 @@
     border: 1px solid darkgrey;
     background-color: rgba(245, 245, 220, 0.705);
     border-radius: 5px;
-    width: 250px;
-    height: 400px;
+    width: 220px;
+    height: 370px;
     padding: 7px;
     position: relative;
 }
@@ -31,4 +31,9 @@
     border: 1px solid gray;
     border-radius: 0 0 5px 5px;
     position: absolute;
+}
+
+.card-btn:hover {
+    background-color: aqua;
+    color: olive;
 }

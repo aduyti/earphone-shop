@@ -9,7 +9,9 @@ const addProductToCart = product => {
     else {
         cart = [...cart, product];
         localStorage.setItem('earphoneCart', JSON.stringify(cart));
+        return true;
     }
+    return false;
 }
 const getCart = () => {
     return JSON.parse(localStorage.getItem('earphoneCart'));
@@ -20,4 +22,4 @@ const removeProductFromCart = id => {
 const removeAllProductsFromCart = () => {
     console.log("all");
 }
-export { addProductToCart, removeProductFromCart, removeAllProductsFromCart };
+export { addProductToCart, removeProductFromCart, removeAllProductsFromCart, getCart };

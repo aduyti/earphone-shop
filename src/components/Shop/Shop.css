@@ -1,6 +1,6 @@
 .shop {
     display: grid;
-    grid-template-columns: auto 250px;
+    grid-template-columns: auto 300px;
 }
 
 .products {
@@ -10,9 +10,21 @@
     gap: 25px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
     .products {
         margin: 50px;
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (min-width: 992px) {
+    .products {
         grid-template-columns: repeat(3, auto);
+    }
+}
+
+@media (min-width: 1200px) {
+    .shop {
+        grid-template-columns: auto 450px;
     }
 }
