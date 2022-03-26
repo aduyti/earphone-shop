@@ -32,8 +32,10 @@ const Shop = () => {
     }
     const chooseOne = max => {
         const chosen = Math.floor(Math.random() * max);
-        keepOne(cartItems[chosen].id);
-        setCartItems([cartItems[chosen]]);
+        if (window.confirm(`Do you Like "${cartItems[chosen].name}"`)) {
+            keepOne(cartItems[chosen].id);
+            setCartItems([cartItems[chosen]]);
+        }
     }
     const emptyCart = () => {
         removeAllProductsFromCart();

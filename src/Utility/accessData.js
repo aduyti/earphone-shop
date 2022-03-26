@@ -14,7 +14,7 @@ const addProductToCart = product => {
     return false;
 }
 const getStoredCart = () => {
-    return JSON.parse(localStorage.getItem('earphoneCart'));
+    return JSON.parse(localStorage.getItem('earphoneCart')) || [];
 }
 const removeProductFromCart = id => {
     let cart = JSON.parse(localStorage.getItem('earphoneCart')) || [];
