@@ -1,3 +1,18 @@
+.shop {
+    display: grid;
+    grid-template-columns: auto 250px;
+}
+
+.products {
+    margin: 50px 10px;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 25px;
+}
+
 @media (min-width: 576px) {
-    /* ... */
+    .products {
+        margin: 50px;
+        grid-template-columns: repeat(3, auto);
+    }
 }
